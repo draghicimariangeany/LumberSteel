@@ -3,6 +3,14 @@ $primary: #FFBC00;
 $primary-500: #DFA503; 
 $secondary: black;
 $secondary-300: #3F3F3F;
+$secondary-200: #67686A;
+
+body{
+
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
 
 .top-header{
 
@@ -14,4 +22,72 @@ $secondary-300: #3F3F3F;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    .top-header-contact{
+        display: flex;
+        justify-content: flex-end;
+        a{
+            display: inline-block;
+            color:white;
+            border: 1px solid $primary;
+            padding: 0.5em 1em;
+            background-color: black;
+            border-radius: 1.5em;
+            font-size: 20px;
+            margin-left: 1em;
+            .fa{
+                color: $primary;
+                margin-right: 0.5em;
+            }
+
+        }
+
+    }
+}
+
+#main-nav{
+
+    background-color: $secondary-300;
+    border-top: 1px solid $secondary-200;
+    border-bottom: 1px solid $secondary-200;
+
+    .search-input-holder{
+        border: 7px solid $primary;
+        background-color: white;
+        padding: 30px 10px;
+        flex: 1;
+        border-radius: 15px;
+        margin-top:-30px;
+        margin-bottom: -30px;
+        display: flex;
+        justify-content: center;
+        .title{
+            font-size: 22px;
+        }
+        input{
+            flex: 1;
+        }
+    }
+
+    #main-menu{
+
+        li{
+            a{
+
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none;
+                text-transform: uppercase;
+                color:white;
+                padding-left:15px;
+                padding-right: 15px;
+            }
+            &.current-menu-item{
+                a{
+                    color:$primary;
+                }
+            }
+        }
+
+    }
 }
