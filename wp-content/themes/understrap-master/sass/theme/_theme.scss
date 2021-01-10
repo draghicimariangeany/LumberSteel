@@ -52,20 +52,32 @@ body{
     border-bottom: 1px solid $secondary-200;
 
     .search-input-holder{
-        border: 7px solid $primary;
+        border: 8px solid $primary;
         background-color: white;
-        padding: 30px 10px;
-        flex: 1;
+        padding: 10px 0px;
+        width: 350px;
         border-radius: 15px;
         margin-top:-30px;
         margin-bottom: -30px;
         display: flex;
-        justify-content: center;
+        align-items: center;
         .title{
             font-size: 22px;
+            margin-right: 10px;
+            font-weight: 300;
         }
         input{
             flex: 1;
+            font-size: 22px;
+            border:none;
+            outline: none;
+            padding: 20px 0px;
+
+            &::placeholder{
+                font-weight: bold;
+                color: black;
+                font-size: 22px;
+            }
         }
     }
 
