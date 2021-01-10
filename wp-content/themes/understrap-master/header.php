@@ -67,9 +67,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="search-input-holder">
 
 						<div class="title">
-							Quote:
+							Search:
 						</div>
-						<input type="text" placeholder="Type your suburb here">
+						<input type="text" placeholder="Your Search Input">
 
 				</div>
 

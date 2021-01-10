@@ -9,6 +9,8 @@ body{
 
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color:white;
 
 }
 
@@ -65,6 +67,7 @@ body{
             font-size: 22px;
             margin-right: 10px;
             font-weight: 300;
+            color: black;
         }
         input{
             flex: 1;
@@ -97,6 +100,16 @@ body{
             &.current-menu-item{
                 a{
                     color:$primary;
+                }
+            }
+            .dropdown-menu{
+                background-color: $secondary-300;
+                li{
+                    a{
+                        &:hover{
+                            background: black;
+                        }
+                    }
                 }
             }
         }
